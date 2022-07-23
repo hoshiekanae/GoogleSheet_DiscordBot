@@ -126,7 +126,6 @@ async def on_message(message):
                         if len(msgs) != 0:
                             index = random.randint(0, len(msgs)-1)
                             await message.channel.send(msgs[index].replace('<username>',username))
-                    return
     
 # Bot起動
 client.run(TOKEN)
